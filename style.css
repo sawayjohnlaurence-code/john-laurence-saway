@@ -1,0 +1,387 @@
+
+/* ==================================
+   JOHN LAURENCE C. SAWAY
+   PERSONAL ONLINE PORTFOLIO
+   ================================== */
+
+/* GENERAL STYLE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101010;
+    color: white;
+    line-height: 1.7;
+}
+
+span {
+    color: #d4af70;
+}
+
+/* NAVIGATION BAR */
+
+header {
+    background: #181818;
+    border-bottom: 1px solid #333;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #d4af70;
+}
+
+/* HOMEPAGE */
+
+.home {
+    min-height: 85vh;
+    padding: 70px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.subtitle {
+    color: #d4af70;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.description {
+    color: #bbb;
+    margin: 20px 0;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d4af70;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.home-image img {
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid #d4af70;
+    border-radius: 10px;
+}
+
+/* GENERAL PAGE SECTION */
+
+.page-section {
+    min-height: 80vh;
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title h1 {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+/* ABOUT PAGE */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.about-image img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #d4af70;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    color: #d4af70;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.about-text p {
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    background: #202020;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    border-color: #d4af70;
+    transform: translateY(-5px);
+}
+
+.info-card h3 {
+    color: #d4af70;
+    margin-bottom: 8px;
+}
+
+/* PORTFOLIO PAGE */
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: #202020;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af70;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-category {
+    color: #d4af70;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.project-content h2 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.project-content p {
+    color: #bbb;
+    font-size: 14px;
+}
+
+.project-icon {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #292929;
+    color: #d4af70;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+/* CONTACT PAGE */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h2 {
+    color: #d4af70;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #bbb;
+}
+
+.contact-detail {
+    margin-top: 25px;
+}
+
+.contact-detail h3 {
+    color: #d4af70;
+    margin-bottom: 5px;
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    background: #202020;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #d4af70;
+}
+
+.contact-form button {
+    background: #d4af70;
+    color: black;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: white;
+}
+
+/* FOOTER */
+
+footer {
+    background: #181818;
+    border-top: 1px solid #333;
+    text-align: center;
+    padding: 25px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .information {
+        grid-template-columns: 1fr;
+    }
+
+    .home-image img {
+        width: 250px;
+        height: 320px;
+    }
+}
